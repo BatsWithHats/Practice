@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Ali practice webstite</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat@display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-color:lavender;
+        font-family: 'Raleway', times;
+    }
+    h1{
+        color: #6600cc;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .larger-image{
+        width: 1300px;
+    }
+    .form{
+        width: 490px;
+        color:#6600cc;
+        background-color:rgb(212, 212, 205);
+        padding: 15px 0px 15px 15px;
+        margin: 0px 0px 25px 15px;
+        border-radius: 10px;
+    }
+    [type="submit"]{
+        padding: 5px 5px 5px 5px;
+        margin: 15px 5px 5px 5px;
+    }
+    [type="text"]{
+        margin: 5px 0px 0px 5px;
+    }
+</style>
+</head>
+<body>
     <h1 id=header1>Hello!</h1>
     <h2>This is my practice website.</h2>
     <p>The area below this will be used to practice different form inputs. Hello happy form elements!</p>
-    <form>
+    <form class="form">
         <label for="fname">First name:</label><br>
         <input type="text" placeholder="first name" id="fname" required><br>
         <label for="lname">Last name:</label><br>
@@ -27,7 +61,7 @@
         <input type="submit" value="Submit Here">
     </form>
     <a href="https://www.google.com/sky/">
-        <img src="https://scx1.b-cdn.net/csz/news/800/2019/galaxy.jpg" 
+        <img class="larger-image" src="https://scx1.b-cdn.net/csz/news/800/2019/galaxy.jpg" 
         alt="A lovely blue, black, and purple galaxy"></a>
     <p>I am currently learning web development using 
         <a href="https://theodinproject.com/">The Odin Project</a> and
@@ -45,14 +79,11 @@
         <ol>
             <li>I love learning and this is very difficult. I feel incredibly accomplished when something 'clicks'.</li>
             <li>Web development, as far as I can tell, is a growing field that I can build a career in.</li>
-            <li>This allows me to let my creative side out, especially with CSS. (Which I haven't added to this page yet. I will soon though).</li>
+            <li>This allows me to let my creative side out, especially with CSS.</li>
             <li>By creating a habit of learning and generally 'doing stuff' I find that I am able to accomplish more things.</li>
         </ol>
-        <!--
-            Remove the text in the ( ) above once CSS elements have been added to the page.
-        -->
     </div>
-    <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fbriankoberlein%2Ffiles%2F2017%2F07%2Feso1723a-1200x932.jpg"
+    <img style="border-radius: 50%" src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fbriankoberlein%2Ffiles%2F2017%2F07%2Feso1723a-1200x932.jpg"
     alt="The Orion Nebula">
     <p>The page isn't very big yet, but you can return to the top by clicking <a href="#header1">here</a>.</p>
     <!--
@@ -60,4 +91,5 @@
         things progress by commiting it to github whenever major changes take place. Not only will this 
         be an example to look back on, but it should also serve as encouragement as I continue to learn.
     -->
-    </html>
+</body>
+</html>
