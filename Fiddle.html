@@ -6,15 +6,33 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 <style>
     body{
-        background-color:lavender;
+        background:linear-gradient(90deg,lavender, lightblue);
         font-family: 'Raleway', times;
     }
     h1{
         color: #6600cc;
         font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 4em;
+        width: 250px;
+        margin:auto;
     }
-    .larger-image{
-        width: 1300px;
+    h1:hover{
+        color: rgb(41, 54, 228)
+    }
+    h2{
+        text-align: center;
+    }
+    div{
+        padding: 0 10px 0 10px;
+    }
+    .purple-space{
+        float: right;
+        width: 40%;
+    }
+    .nebula{
+        border-radius: 50%;
+        padding: 25px 25px 25px 25px;
     }
     .form{
         width: 490px;
@@ -23,6 +41,7 @@
         padding: 15px 0px 15px 15px;
         margin: 0px 0px 25px 15px;
         border-radius: 10px;
+        box-shadow: 10px 10px 20px 0 rgba(0,0,0,0.5)
     }
     [type="submit"]{
         padding: 5px 5px 5px 5px;
@@ -31,9 +50,46 @@
     [type="text"]{
         margin: 5px 0px 0px 5px;
     }
+    #navbar{
+        width: 100%;
+        background:linear-gradient(90deg, rgb(194, 194, 248),rgb(143, 208, 230)); 
+    }
+    nav li{
+        display: inline;
+        padding: 15px;
+        position: relative;
+        right: 25px;
+    }
+    #submit-button{
+        animation-name:colors;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;  
+    }
+    @keyframes colors{
+        0%{
+            background-color:lavender;
+        }
+        50%{
+            background-color: lightblue;
+        }
+        100%{
+            background-color: lavender;
+        }
+    }
 </style>
 </head>
 <body>
+    <nav id="navbar">
+        <ul>
+            <li><a href=" ">Link 1</a></li>
+            <li><a href=" ">Link 2</a></li>
+            <li><a href=" ">Link 3</a></li>
+        </ul>
+    </nav>
+<!--
+The list above is the navbar and contains empty " " as there is currently no other pages to link to.
+Be sure to update those once more pages have been added to the website.
+-->
     <h1 id=header1>Hello!</h1>
     <h2>This is my practice website.</h2>
     <p>The area below this will be used to practice different form inputs. Hello happy form elements!</p>
@@ -58,13 +114,13 @@
         <label for="little sombrero">Little Sombrero</label>
         <input type="checkbox" id="milky way" name="galaxies" value="milky way">
         <label for="milky way">Milky Way</label><br>
-        <input type="submit" value="Submit Here">
+        <input type="submit" id="submit-button" value="Submit Here">
     </form>
     <a href="https://www.google.com/sky/">
-        <img class="larger-image" src="https://scx1.b-cdn.net/csz/news/800/2019/galaxy.jpg" 
+        <img class="purple-space" src="https://scx1.b-cdn.net/csz/news/800/2019/galaxy.jpg" 
         alt="A lovely blue, black, and purple galaxy"></a>
     <p>I am currently learning web development using 
-        <a href="https://theodinproject.com/">The Odin Project</a> and
+        <a href="https://www.theodinproject.com/home">The Odin Project</a> and
         <a href="https://www.freecodecamp.org/">Free Code Camp</a>.</p>
     <div>
         <p>The area below here will be used to practice the creation of lists. Hello happy little lists!</p>
@@ -83,7 +139,7 @@
             <li>By creating a habit of learning and generally 'doing stuff' I find that I am able to accomplish more things.</li>
         </ol>
     </div>
-    <img style="border-radius: 50%" src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fbriankoberlein%2Ffiles%2F2017%2F07%2Feso1723a-1200x932.jpg"
+    <img class="nebula" src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fbriankoberlein%2Ffiles%2F2017%2F07%2Feso1723a-1200x932.jpg"
     alt="The Orion Nebula">
     <p>The page isn't very big yet, but you can return to the top by clicking <a href="#header1">here</a>.</p>
     <!--
